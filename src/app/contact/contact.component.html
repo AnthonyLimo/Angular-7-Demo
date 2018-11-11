@@ -20,6 +20,11 @@
     </div>
   </label>
 
-  <button (click)="onSubmit()">Send Message</button>
+  <button (click)="onSubNmit()">Send Message</button>
 
 </form>
+
+<div *ngIf="submitted" class="">
+  <strong>Name:</strong>
+  <span>{{ messageForm.controls.name.value }}</span>
+</div>
