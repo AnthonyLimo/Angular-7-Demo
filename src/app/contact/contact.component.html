@@ -28,3 +28,8 @@
   <strong>Name:</strong>
   <span>{{ messageForm.controls.name.value }}</span>
 </div>
+
+<div *ngIf="submitted" class="">
+  <strong>Message:</strong>
+  <span>{{ messageForm.controls.message.value }}</span>
+</div>
